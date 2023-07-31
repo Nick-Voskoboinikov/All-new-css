@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grayscale an image</title>
+    <style>
+.card {
+filter: grayscale(0%);
+transition: filter 300ms;
+}
+.card:is(:hover, :focus) {
+filter: grayscale(100%);
+}
+
+
+.highlight {
+background: right / 0% 100% no-repeat
+linear-gradient(#c1f5ee, #c1f5ee);
+transition: background-size 500ms;
+}
+.highlight:hover {
+background: left / 100% 100% no-repeat
+linear-gradient(#c1f5ee, #c1f5ee);
+}
+
+    </style>
+</head>
+<body>
+    Test commit
+<span class="highlight">Hover me!</span>
+
+</body>
+</html>

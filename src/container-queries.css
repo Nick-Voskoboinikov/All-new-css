@@ -1,3 +1,9 @@
+.resize{
+    cursor: ew-resize;
+}
+
+
+
 /* create container context first  */
 .container {
     container-type: inline-size;

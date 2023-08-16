@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container queries</title>
+
+<style>
+
+/* create container context first  */
+.container {
+    container-type: inline-size;
+}
+.subelement {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: blue;
+}
+
+/* styles applied till parent is greater than 500рх */
+@container (max-width: 500px) {
+    .subelement {
+        grid-template-columns: 1fr;
+        color: red;
+    }
+}
+
+</style>
+
+
+</head>
+<body>
+
+    <h2>We can catch parent element dimensions to apply styles to its child</h2>
+    <div class="container">
+        <div class="subelement">
+        An awesome image <br>
+        Some header info <br>
+        or some description
+        </dlv>
+        </div>
+</body>
+</html>

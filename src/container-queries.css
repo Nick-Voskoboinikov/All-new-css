@@ -1,0 +1,16 @@
+/* create container context first  */
+.container {
+    container-type: inline-size;
+}
+.subelement {
+    border: 2px solid green;
+    color: blue;
+}
+
+/* styles applied till parent is greater than 500рх */
+@container (max-width: 500px) {
+    .subelement {
+        color: red;
+        background-color: lightpink;
+    }
+}

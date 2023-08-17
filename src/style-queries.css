@@ -1,0 +1,121 @@
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 2.5rem;
+    padding: 1rem;
+}
+.status {
+    font-size: 1.5rem;
+}
+
+
+.order-contents {
+    align-self: end;
+}
+
+.card-container {
+    display: grid;
+}
+
+.order-card {
+    display: grid;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.order-card:after {
+position: absolute;
+top: -1.95rem;
+right: -1.95rem;
+display: block;
+width: 1.5rem;
+height: 1.5rem;
+padding: 1.5rem;
+background-color: white;
+border-radius: 100%;
+font-size: xx-large;
+}
+
+.status {
+font-weight: 700;
+}
+
+.order-contents, .status {
+    padding-top: 2rem;
+}
+
+
+
+/* style queries magic starts here */
+.card-container {
+  container-name: orders;
+}
+
+@container style(--unpaid: true) {
+  .order-card {
+    background: 
+  linear-gradient(
+    to top,
+    hsl(61.04, 100%, 45.1%) 0%,
+    hsl(58.82, 100%, 44.36%) 0.9%,
+    hsl(56.14, 100%, 44.41%) 3.6%,
+    hsl(53.12, 100%, 44.47%) 7.8%,
+    hsl(49.84, 100%, 44.54%) 13.3%,
+    hsl(46.4, 100%, 44.6%) 19.9%,
+    hsl(42.88, 100%, 44.67%) 27.4%,
+    hsl(39.37, 100%, 44.74%) 35.6%,
+    hsl(35.96, 100%, 44.81%) 44.2%,
+    hsl(32.74, 100%, 44.88%) 53.1%,
+    hsl(29.78, 100%, 44.94%) 62.1%,
+    hsl(27.17, 100%, 44.99%) 70.8%,
+    hsl(24.99, 100%, 45.04%) 79.2%,
+    hsl(23.34, 100%, 45.07%) 87%,
+    hsl(22.28, 100%, 45.09%) 94%,
+    hsl(21.91, 100%, 45.1%) 100%
+  );
+  }
+  
+  .order-card:after {
+    content: '📦';
+  }
+}
+
+@container style(--paid: true) {
+  .order-card {
+    background: linear-gradient(
+    to bottom,
+    hsl(98.09, 100%, 45.1%) 0%,
+    hsl(101.54, 89.27%, 47.34%) 0.9%,
+    hsl(106.33, 77.76%, 50.02%) 3.6%,
+    hsl(112.88, 74.6%, 53.06%) 7.8%,
+    hsl(121.8, 71.29%, 55.41%) 13.3%,
+    hsl(131.6, 70.48%, 53.51%) 19.9%,
+    hsl(141.06, 69.71%, 51.56%) 27.4%,
+    hsl(149.97, 70.09%, 49.61%) 35.6%,
+    hsl(158.19, 74.94%, 47.7%) 44.2%,
+    hsl(165.58, 79.9%, 45.9%) 53.1%,
+    hsl(172.05, 84.83%, 44.24%) 62.1%,
+    hsl(177.53, 89.5%, 42.77%) 70.8%,
+    hsl(181.89, 93.84%, 42.81%) 79.2%,
+    hsl(184.8, 97.23%, 44.04%) 87%,
+    hsl(186.48, 99.29%, 44.82%) 94%,
+    hsl(187.04, 100%, 45.1%) 100%
+  );
+  }
+  
+  .order-card:after {
+    content: '🎁';
+  }
+}

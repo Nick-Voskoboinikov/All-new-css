@@ -6,20 +6,24 @@
     <title>What's new in CSS?</title>
     <style>
 .card {
-filter: grayscale(0%);
-transition: filter 300ms;
+    filter: grayscale(0%);
+    transition: filter 300ms;
 }
 .card:is(:hover, :focus) {
-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 .highlight {
-background: right / 0% 100% no-repeat
-linear-gradient(#c1f5ee, #c1f5ee);
-transition: background-size 500ms;
+    background: right / 0% 100% no-repeat
+    linear-gradient(#c1f5ee, #c1f5ee);
+    transition: background-size 500ms;
 }
 .highlight:hover {
-background: left / 100% 100% no-repeat
-linear-gradient(#c1f5ee, #c1f5ee);
+    background: left / 100% 100% no-repeat
+    linear-gradient(#c1f5ee, #c1f5ee);
+}
+
+h1:not(:first-of-type){
+    padding-top: 2rem;
 }
 
     </style>
@@ -27,10 +31,10 @@ linear-gradient(#c1f5ee, #c1f5ee);
 <body>
     <section>
     <h1>Container queries</h1>
-        <p align="justify">Nowadays CSS allows catching element by its dimensions to control its child elements. Try resizing <a href="/src/container-queries.htm" target="_balnk">this page</a> window/tab.</p>
+        <p align="justify">Nowadays CSS allows catching element by its dimensions to control its child elements. Try resizing <a class="highlight" href="/src/container-queries.htm" target="_balnk">this page</a> window/tab.</p>
 
         <h1>Style queries</h1>
-        <p align="justify">Nowadays CSS allows querying element style attribute. <a href="/src/style-queries.htm" target="_balnk">Sample page</a>.</p>
+        <p align="justify">Nowadays CSS allows querying element style attribute. <a class="highlight"  href="/src/style-queries.htm" target="_balnk">Sample page</a>.</p>
     </section>
 
 </body>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:has() CSS selector</title>
+    <link rel="stylesheet" href="has-styles.css">
+</head>
+
+<body>
+    <section>
+        <h1>Querying elements that have specific children is <a href="https://caniuse.com/?search=%3Ahas()" target="_blank" rel="nofollow">supported</a> naturally now</h1>
+
+<table borders="all">
+    <tr><th></th><th></th><th></th></tr>
+    <tr>
+        <td>A card without an image:</td>
+        <td>
+        <div class="card">
+            <span class="content">
+                Mastering Lorem ipsum text was never easier with this step-by-step guide
+            </span>
+        </dlv>
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>A thumbnailed card:</td>
+        <td>
+        <dlv class="card">
+            <figure >
+                <img src="https://unsplash.com/photos/tNALoIZhqVM/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NXx8Y3VwJTIwb2YlMjBjb2ZmZWV8ZW58MHx8fHwxNjkyNzUxMDc0fDA&force=true&w=160" alt="cup of cffee" title="coffe cup" >
+            </figure>
+            <span class="content">
+                What can be better than exhilarating odor of fresh coffe in the morning? Follow this guide to make it even more special! 
+            </span>
+        </dlv>
+        </td>
+        <td>
+            <code>
+                .card:has(img){
+                    border-top: 15px solid blue;
+                    display: flex;
+                    align-items: center;
+                }
+            </code>
+        </td>
+    </tr>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+tr > td:first-child {
+    max-width: 7vw;
+    text-align: right;
+}
+tr > td:nth-child(2) {
+    max-width: 75vw;
+}
+figure {
+    width: 160px;
+    height: 105px;
+    float: left;
+    margin: 0;
+    padding: 10px;
+}
+
+.card {
+    display: block;
+    min-height: 120px;
+    margin: 3em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 30px 5px #999;
+    -o-box-shadow: 0 0 30px 5px #999;
+    -moz-box-shadow: 0 0 30px 5px #999;
+    -webkit-box-shadow: 0 0 30px 5px #999;
+    max-width: 500px;
+}
+.card .content {
+    display: inline-block;
+    max-width: 32ch;
+}
+
+.card:has(img){
+    border-top: 15px solid blue;
+    display: flex;
+    align-items: center;
+}

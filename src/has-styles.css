@@ -2,6 +2,7 @@
 table {
     width: 100%;
     border-collapse: collapse;
+    padding-top: 3em;
 }
 tr > td:first-child {
     max-width: 7vw;
@@ -9,6 +10,9 @@ tr > td:first-child {
 }
 tr > td:nth-child(2) {
     max-width: 75vw;
+}
+tr > th {
+    text-transform: capitalize;
 }
 figure {
     width: 160px;
@@ -33,6 +37,9 @@ figure {
 .card .content {
     display: inline-block;
     max-width: 32ch;
+}
+pre {
+    color: red;
 }
 
 .card:has(img){

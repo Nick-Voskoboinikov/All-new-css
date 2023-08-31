@@ -38,12 +38,22 @@ figure {
     display: inline-block;
     max-width: 32ch;
 }
-pre {
+samp {
+    font-weight: 900;
+}
+samp > span {
     color: red;
 }
 
 .card:has(img){
     border-top: 15px solid blue;
+    display: flex;
+    align-items: center;
+}
+
+
+.card.inverted:not(:has(img) ){
+    border-top: 15px solid greenyellow;
     display: flex;
     align-items: center;
 }

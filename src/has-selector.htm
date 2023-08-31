@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>:has() CSS selector</title>
-    <link rel="stylesheet" href="has-styles.css">
+    <link rel="stylesheet" href="has-selector.css">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
         <h1>Querying elements that have specific children is <a href="https://caniuse.com/?search=%3Ahas()" target="_blank" rel="nofollow">supported</a> naturally now</h1>
 
 <table borders="all">
-    <tr><th>about</th><th>effect</th><th>code</th></tr>
+    <tr><th>about</th><th>effect</th><th>CSS code</th></tr>
     <tr>
         <td>A card without an image:</td>
         <td>
@@ -33,20 +33,37 @@
                 <img src="https://unsplash.com/photos/tNALoIZhqVM/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NXx8Y3VwJTIwb2YlMjBjb2ZmZWV8ZW58MHx8fHwxNjkyNzUxMDc0fDA&force=true&w=160" alt="cup of cffee" title="coffe cup" >
             </figure>
             <span class="content">
-                What can be better than exhilarating odor of fresh coffe in the morning? Follow this guide to make it even more special! 
+                What can be better than exhilarating odor of fresh coffee in the morning? Follow this guide to make it even more special! 
             </span>
         </dlv>
         </td>
         <td>
-            <kbd>
-                <pre>
-.card:has(img){
-    border-top: 15px solid blue;
-    display: flex;
-    align-items: center;
+                <samp>
+.card<span>:has(img)</span>&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;border-top: 15px solid blue;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;align-items: center;<br>
 }
-            </pre>
-            </kbd>
+</samp>
+        </td>
+    </tr>
+    <tr>
+        <td>Inverted condition: a card that does NOT have an image</td>
+        <td>
+        <dlv class="card inverted">
+            <span class="content">
+                Simplicity is the seal of truth 
+            </span>
+        </dlv>
+        </td>
+        <td>
+                <samp>
+.card.inverted<span>:not(:has(img) )</span>&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;border-top: 15px solid greenyellow;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;align-items: center;<br>
+}
+</samp>
         </td>
     </tr>
     </section>

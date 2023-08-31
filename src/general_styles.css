@@ -1,0 +1,20 @@
+.card {
+    filter: grayscale(0%);
+    transition: filter 300ms;
+}
+.card:is(:hover, :focus) {
+    filter: grayscale(100%);
+}
+.highlight {
+    background: right / 0% 100% no-repeat
+    linear-gradient(#c1f5ee, #c1f5ee);
+    transition: background-size 500ms;
+}
+.highlight:hover {
+    background: left / 100% 100% no-repeat
+    linear-gradient(#c1f5ee, #c1f5ee);
+}
+
+h1:not(:first-of-type){
+    padding-top: 2rem;
+}

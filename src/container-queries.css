@@ -15,7 +15,7 @@
 /* styles applied till parent is greater than 500рх */
 @container (max-width: 500px) {
     .subelement {
-        color: white;
-        background-color: lightpink;
+        color: oklch(100% 0 0);
+        background-color: oklch(84.74% 0.08579244297293216 9.086546614064325);
     }
 }

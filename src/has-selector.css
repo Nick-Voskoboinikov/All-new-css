@@ -42,7 +42,7 @@ samp {
     font-weight: 900;
 }
 samp > span {
-    color: oklch(62.8% 0.25768330773615683 29.2338851923426)638055);
+    color: oklch(62.8% 0.25768330773615683 29.2338851923426);
 }
 
 .card:has(img){
@@ -53,7 +53,7 @@ samp > span {
 
 
 .card.inverted:not(:has(img) ){
-    border-top: 15px solid greenyellow;
+    border-top: 15px solid oklch(91.3% 0.233 130.02);
     display: flex;
     align-items: center;
 }

@@ -10,7 +10,7 @@ p > samp {
 }
 
 p > samp > strong > i {
-    color: oklch(62.8% 0.25768330773615683 29.2338851923426)638055); 
+    color: oklch(62.8% 0.25768330773615683 29.2338851923426); 
 }
 
 ul {
@@ -25,6 +25,6 @@ ul > li {
 
 
 /* Query only second element with the pre-chosen class */
-ul li:nth-child(2 of .pre-chosen) {
-    outline: 0.3rem dashed oklch(62.8% 0.25768330773615683 29.2338851923426)638055);
+ul li:nth-child(2 of .pre-chosen){
+    outline: 0.3rem dashed oklch(62.8% 0.25768330773615683 29.2338851923426);
 }

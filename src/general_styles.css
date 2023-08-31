@@ -7,12 +7,12 @@
 }
 .highlight {
     background: right / 0% 100% no-repeat
-    linear-gradient(#c1f5ee, #c1f5ee);
+    linear-gradient(oklch(93.24% 0.054 186.17), oklch(93.24% 0.054 186.17));
     transition: background-size 500ms;
 }
 .highlight:hover {
     background: left / 100% 100% no-repeat
-    linear-gradient(#c1f5ee, #c1f5ee);
+    linear-gradient(oklch(93.24% 0.054 186.17), oklch(93.24% 0.054 186.17));
 }
 
 h1:not(:first-of-type){

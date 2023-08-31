@@ -28,10 +28,10 @@ figure {
     margin: 3em;
     padding: 1em;
     border-radius: 5px;
-    box-shadow: 0 0 30px 5px #999;
-    -o-box-shadow: 0 0 30px 5px #999;
-    -moz-box-shadow: 0 0 30px 5px #999;
-    -webkit-box-shadow: 0 0 30px 5px #999;
+    box-shadow: 0 0 30px 5px oklch(68.3% 0 0);
+    -o-box-shadow: 0 0 30px 5px oklch(68.3% 0 0);
+    -moz-box-shadow: 0 0 30px 5px oklch(68.3% 0 0);
+    -webkit-box-shadow: 0 0 30px 5px oklch(68.3% 0 0);
     max-width: 500px;
 }
 .card .content {
@@ -42,11 +42,11 @@ samp {
     font-weight: 900;
 }
 samp > span {
-    color: red;
+    color: oklch(62.8% 0.25768330773615683 29.2338851923426)638055);
 }
 
 .card:has(img){
-    border-top: 15px solid blue;
+    border-top: 15px solid oklch(45.2% 0.31321437166460125 264.052020638055);
     display: flex;
     align-items: center;
 }

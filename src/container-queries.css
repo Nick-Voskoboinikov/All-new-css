@@ -9,7 +9,7 @@
     container-type: inline-size;
 }
 .subelement {
-    color: blue;
+    color: oklch(45.2% 0.31321437166460125 264.052020638055);
 }
 
 /* styles applied till parent is greater than 500рх */

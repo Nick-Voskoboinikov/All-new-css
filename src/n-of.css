@@ -1,0 +1,30 @@
+p {
+    padding-top: 3rem;
+    padding-left: 2rem;
+}
+
+p > samp {
+    display: block;
+    max-width: 50%;
+    background-color: oklch(88.5% 0 343);
+}
+
+p > samp > strong > i {
+    color: red; 
+}
+
+ul {
+    max-width: 45%;
+    margin-left: 2rem;
+}
+ul > li {
+    margin-top: 1rem;
+}
+
+
+
+
+/* Query only second element with the pre-chosen class */
+ul li:nth-child(2 of .pre-chosen) {
+    outline: 0.3rem dashed red;
+}

@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nth child of</title>
+    <link rel="stylesheet" href="./n-of.css">
 </head>
 <body>
     
+<section>
+    <h1><a href="./n-of.css"  target="_self">CSS</a> <a href="https://caniuse.com/css-nth-child-of" target="_blank" rel="nofollow">enables us</a> to query on pre-selected elements in <a href="https://nick-voskoboinikov.github.io/CSS-nTh-childs/" target="_blank">n-th pseudo selector</a> constructions</h1>
+    
+    <p align="justify">Sample<br>(end user's browser firstly selects the 2nd element that has .pre-chosen class name):</p>
+    <ul>
+        <li> First element </li>
+        <li class="pre-chosen"> Second element (it has <strong>.pre-chosen</strong> class)</li>
+        <li> Third element </li>
+        <li> Fourth  element </li>
+        <li> Fifth element </11>
+        <li class="pre-chosen"> Sixth element (it has <strong>.pre-chosen</strong> class as well) </li>
+    </ul>
+    <p align="justify">In CSS:<br>
+        <samp>ul li<strong>:nth-child(2 <i>of .pre-chosen</i>)</strong> {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;outline: 0.3rem dashed red;<br>
+        }</samp>
+        </p>
+</section>
+
 </body>
 </html>

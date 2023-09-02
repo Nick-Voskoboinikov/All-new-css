@@ -1,9 +1,9 @@
 p:first-letter {
-    initial-letter:  4 3;
+    initial-letter:  3 2.5;
     font-size: 60px;
     font-weight: bold;
     margin-right: 1rem;
-    padding: .5rem;
+    padding: .15rem;
     color: oklch(77.1% 0.197 337.13);
     border: 10px solid;
     border-radius: 5rem;

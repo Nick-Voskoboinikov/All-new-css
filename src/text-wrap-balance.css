@@ -8,9 +8,6 @@ div.resizable {
     max-width: calc(fit-content + 3em);
   }
 
-  div.resizable > h1:nth-child(1){
-    text-wrap: wrap;
-  }
   div.resizable > h1:nth-child(1):before {
     display: block;
     content: 'without text-wrap: balance;';

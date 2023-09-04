@@ -1,0 +1,30 @@
+div.resizable {
+    border: 5px double black;
+    min-height: 50px;
+    min-width: 60px;
+    resize: both;
+    overflow: auto;
+    max-height: max-content;
+    max-width: calc(fit-content + 3em);
+    text-align: center;
+  }
+
+  div.resizable > h1:nth-child(1){
+    background-color: red;
+    text-wrap: wrap;
+  }
+  div.resizable > h1:nth-child(1):before {
+    display: block;
+    content: 'without text-wrap: balance;';
+    background-color: yellow;
+  }
+
+  div.resizable > h1:nth-child(2n){
+    background-color: blue;
+    text-wrap: balance;
+  }
+  div.resizable > h1:nth-child(2n):before {
+    display: block;
+    content: 'with text-wrap: balance;';
+    background-color: yellow;
+  }
